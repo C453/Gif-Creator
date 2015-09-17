@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        var navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = UIColorFromRGB("66CC66")
+        navigationBarAppearace.barTintColor = UIColorFromRGB("66CC66")
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         return true
     }
 
@@ -106,6 +112,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func UIColorFromRGB(colorCode: String, alpha: Float = 1.0) -> UIColor {
+        var scanner = NSScanner(string:colorCode)
+        var color:UInt32 = 0;
+        scanner.scanHexInt(&color)
+        
+        let mask = 0x000000FF
+        let r = CGFloat(Float(Int(color >> 16) & mask)/255.0)
+        let g = CGFloat(Float(Int(color >> 8) & mask)/255.0)
+        let b = CGFloat(Float(Int(color) & mask)/255.0)
+        
+        return UIColor(red: r, green: g, blue: b, alpha: CGFloat(alpha))
+    }
+
 
 }
 

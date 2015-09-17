@@ -1,25 +1,215 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GBm-Un-Hsq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Gif Creator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gif_Creator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvy-Jh-TbD">
+                                <rect key="frame" x="83" y="476" width="248" height="42"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7SU-qy-Oll"/>
+                                    <constraint firstAttribute="width" secondItem="Nvy-Jh-TbD" secondAttribute="height" multiplier="124:21" id="I3E-vF-eBb"/>
+                                    <constraint firstAttribute="width" secondItem="Nvy-Jh-TbD" secondAttribute="height" multiplier="124:21" id="JCo-Ht-tsK"/>
+                                    <constraint firstAttribute="height" constant="42" id="kBQ-Fs-AWD"/>
+                                    <constraint firstAttribute="height" constant="42" id="q4N-VM-U6x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Choose Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7SU-qy-Oll"/>
+                                        <exclude reference="I3E-vF-eBb"/>
+                                        <exclude reference="JCo-Ht-tsK"/>
+                                        <exclude reference="kBQ-Fs-AWD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="chooseVideoBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hap-Dz-I4w"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="67" id="6fz-Ur-3KR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nvy-Jh-TbD" secondAttribute="bottom" constant="218" id="78q-E6-sg6"/>
+                            <constraint firstAttribute="trailing" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="20" symbolic="YES" id="7zv-bt-BzS"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="8Tc-J5-jX2"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="CSS-Cl-SU1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="67" id="DZf-1N-Mhj"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="DrY-C6-UXZ"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="FDg-SH-dKL"/>
+                            <constraint firstAttribute="centerY" secondItem="Nvy-Jh-TbD" secondAttribute="centerY" constant="-129" id="P99-Sd-HLF"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="VBW-Pd-Bxh"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="Vrj-yR-RMZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="67" id="WSB-8R-Dh6"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="eAn-7Q-KUC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nvy-Jh-TbD" secondAttribute="bottom" constant="179" id="esh-ZE-cPs"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="h2W-TW-Dvs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="67" id="htc-xJ-N1Q"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="106" id="kE9-zg-31I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="67" id="l6Q-mi-Ntc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nvy-Jh-TbD" secondAttribute="bottom" constant="347" id="pob-xc-Jbu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nvy-Jh-TbD" secondAttribute="bottom" constant="218" id="pvV-m6-05C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="67" id="qvy-HW-h1P"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nvy-Jh-TbD" secondAttribute="bottom" constant="218" id="sQB-fV-fW3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nvy-Jh-TbD" secondAttribute="bottom" constant="218" id="tNq-sh-lTa"/>
+                            <constraint firstAttribute="centerX" secondItem="Nvy-Jh-TbD" secondAttribute="centerX" id="tjf-Hk-ndY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="106" id="uRR-qh-Sj5"/>
+                            <constraint firstItem="Nvy-Jh-TbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="uTo-fO-0l7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nvy-Jh-TbD" secondAttribute="trailing" constant="67" id="wVw-q3-Zrt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7zv-bt-BzS"/>
+                                <exclude reference="8Tc-J5-jX2"/>
+                                <exclude reference="DZf-1N-Mhj"/>
+                                <exclude reference="DrY-C6-UXZ"/>
+                                <exclude reference="FDg-SH-dKL"/>
+                                <exclude reference="P99-Sd-HLF"/>
+                                <exclude reference="VBW-Pd-Bxh"/>
+                                <exclude reference="Vrj-yR-RMZ"/>
+                                <exclude reference="WSB-8R-Dh6"/>
+                                <exclude reference="eAn-7Q-KUC"/>
+                                <exclude reference="h2W-TW-Dvs"/>
+                                <exclude reference="htc-xJ-N1Q"/>
+                                <exclude reference="kE9-zg-31I"/>
+                                <exclude reference="l6Q-mi-Ntc"/>
+                                <exclude reference="qvy-HW-h1P"/>
+                                <exclude reference="tjf-Hk-ndY"/>
+                                <exclude reference="uRR-qh-Sj5"/>
+                                <exclude reference="uTo-fO-0l7"/>
+                                <exclude reference="wVw-q3-Zrt"/>
+                                <exclude reference="78q-E6-sg6"/>
+                                <exclude reference="esh-ZE-cPs"/>
+                                <exclude reference="pob-xc-Jbu"/>
+                                <exclude reference="sQB-fV-fW3"/>
+                                <exclude reference="tNq-sh-lTa"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Gif Creator" id="42L-ez-KvZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="LY5-cE-Qcz" kind="presentation" identifier="properties" id="GkC-Kw-44c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1504" y="325"/>
+        </scene>
+        <!--Properties View Controller-->
+        <scene sceneID="VBY-VK-3Ks">
+            <objects>
+                <viewController id="LY5-cE-Qcz" customClass="PropertiesViewController" customModule="Gif_Creator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BIK-5C-tum"/>
+                        <viewControllerLayoutGuide type="bottom" id="yOV-V7-Vuc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L76-Sq-wWa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sob-Lr-owq">
+                                <rect key="frame" x="83" y="486" width="248" height="42"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sob-Lr-owq" secondAttribute="height" multiplier="124:21" id="23E-qg-Zpo"/>
+                                    <constraint firstAttribute="height" constant="42" id="C2p-ek-sc3"/>
+                                    <constraint firstAttribute="height" constant="42" id="P2P-Tm-mfL"/>
+                                    <constraint firstAttribute="height" constant="42" id="WrY-lp-idC"/>
+                                    <constraint firstAttribute="height" constant="42" id="efm-S9-IRu"/>
+                                    <constraint firstAttribute="width" secondItem="sob-Lr-owq" secondAttribute="height" multiplier="124:21" id="ks1-xn-7oi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Create Gif!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="23E-qg-Zpo"/>
+                                        <exclude reference="C2p-ek-sc3"/>
+                                        <exclude reference="P2P-Tm-mfL"/>
+                                        <exclude reference="WrY-lp-idC"/>
+                                        <exclude reference="ks1-xn-7oi"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="createGifBtnPressed:" destination="LY5-cE-Qcz" eventType="touchUpInside" id="bTJ-au-wAd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59n-uL-p4f">
+                                <rect key="frame" x="60" y="198" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdJ-QL-USo">
+                                <rect key="frame" x="246" y="175" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="uFj-eI-7bt">
+                                <rect key="frame" x="157" y="194" width="219" height="31"/>
+                                <connections>
+                                    <action selector="speedSliderValueChanged:" destination="LY5-cE-Qcz" eventType="valueChanged" id="T9O-tm-Thi"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yOV-V7-Vuc" firstAttribute="top" secondItem="sob-Lr-owq" secondAttribute="bottom" constant="208" id="WOF-wf-BvD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sob-Lr-owq" secondAttribute="trailing" constant="67" id="oEW-Rq-5C5"/>
+                            <constraint firstItem="sob-Lr-owq" firstAttribute="leading" secondItem="L76-Sq-wWa" secondAttribute="leadingMargin" constant="67" id="uzk-iN-WD6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="speedLabel" destination="GdJ-QL-USo" id="wcx-qc-KYZ"/>
+                        <outlet property="speedSlider" destination="uFj-eI-7bt" id="XZh-PG-Nrh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooN-NY-rTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2003" y="325"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="REc-Sq-dcz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GBm-Un-Hsq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UtB-1h-r6c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TVU-7T-QNG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eot-Cp-xeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="325"/>
         </scene>
     </scenes>
 </document>
